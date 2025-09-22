@@ -3,3 +3,7 @@ shell code repo:
 - https://shell-storm.org/
 - https://www.exploit-db.com/
 strace
+plocate <file name>
+nasm  exit.nasm -o exit.o -f elf64
+ld exit.o -o exit
+objdump -d exit -M intel
