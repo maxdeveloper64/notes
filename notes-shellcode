@@ -17,6 +17,7 @@ x/s memory addr
 strings -h
 https://www.cameronwickes.co.uk/stack-alignment-ubuntu-18-04-movaps
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+---------- cmd commands ----------
 systeminfo
 whoami
 set (get env variables)
@@ -43,6 +44,25 @@ icacls <file name>
 ipconfig /ALL
 route print
 netstat -ao
+
+---------- powershell commands ----------
+Get-LocalUser
+Get-LocalGroup
+Get-LocalGroupMember <GROUP NAME>
+dir env:
+Get-ChildItem -Path <ROOT PATH> -Include *.txt -File -Recurse -ErrorAction SilentlyContinue
+-------
+Get-Process
+Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*"
+-------
+Get-Service
+Get-Service * | Select-Object Displayname,Status,ServiceName,Can*
+Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Object {$_.State -like 'Running'}
+
+from cmd:
+powershell
+powershell -ep bypass
+
 
 ##############################################à
 https://learn.microsoft.com/en-us/sysinternals/downloads/
