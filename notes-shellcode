@@ -17,6 +17,7 @@ x/s memory addr
 strings -h
 https://www.cameronwickes.co.uk/stack-alignment-ubuntu-18-04-movaps
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+##################################################################################################
 ---------- cmd commands ----------
 systeminfo
 whoami
@@ -62,6 +63,8 @@ Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Ob
 from cmd:
 powershell
 powershell -ep bypass
+-------
+
 
 
 ##############################################à
