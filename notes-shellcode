@@ -41,6 +41,10 @@ net accounts
 net user
 net user <user namer>
 icacls <file name>
+PS: Get-Acl
+ps: Set-Acl
+icacls <file name> /grant <hostname\username>:R /t /c
+icacls <file name> /setintegritylevel high
 -------
 ipconfig /ALL
 route print
@@ -50,6 +54,8 @@ netstat -ao
 Get-LocalUser
 Get-LocalGroup
 Get-LocalGroupMember <GROUP NAME>
+Get-WmiObject -Class Win32_UserAccount
+wmic useraccount get name,sid
 dir env:
 Get-ChildItem -Path <ROOT PATH> -Include *.txt -File -Recurse -ErrorAction SilentlyContinue
 -------
@@ -64,7 +70,22 @@ from cmd:
 powershell
 powershell -ep bypass
 -------
+Security Principals:
+- user account
+- computer account
+- thread or process
+https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers
+https://learn.microsoft.com/en-us/windows/win32/api/winnt/ne-winnt-well_known_sid_type
+https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens
+https://learn.microsoft.com/en-us/windows/win32/secauthz/mandatory-integrity-control
+https://superuser.com/questions/322423/explain-the-output-of-icacls-exe-line-by-line-item-by-item
+https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753525(v=ws.10)?redirectedfrom=MSDN
 
+SID
+Access Token 
+icacls
+MIC
+UAC
 
 
 ##############################################à
